@@ -1,0 +1,11 @@
+working_set,write_policy,l1_hit_rate,amat,mem_bytes_written,mem_bytes_read
+8K,write-back,0.9994,4.128,0,8192
+8K,write-through,0.9991,4.128,239744,8192
+16K,write-back,0.9987,4.256,0,16384
+16K,write-through,0.9981,4.256,239744,16384
+64K,write-back,0.4971,104.585,2941312,6437440
+64K,write-through,0.4973,74.327,239744,4500928
+256K,write-back,0.1252,178.963,3663424,11197632
+256K,write-through,0.1243,126.648,239744,7849472
+1M,write-back,0.0317,197.654,3789376,12393856
+1M,write-through,0.0314,139.676,239744,8683264

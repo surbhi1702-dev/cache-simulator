@@ -1,0 +1,13 @@
+pattern,ways,organisation,l1_hit_rate,amat,compulsory,capacity,conflict
+random,1,direct-mapped,0.6671,8.763,768,36678,29130
+random,2,2-way,0.6665,8.77,768,46481,19458
+random,4,4-way,0.665,8.788,768,51641,14586
+random,8,8-way,0.6655,8.782,768,55490,10635
+random,16,16-way,0.665,8.788,768,58500,7731
+random,full,fully-assoc,0.6666,8.769,768,65917,0
+strided,1,direct-mapped,0.0,20.096,4096,8408,187496
+strided,2,2-way,0.0,20.096,4096,8408,187496
+strided,4,4-way,0.0,20.096,4096,8408,187496
+strided,8,8-way,0.9375,8.846,4096,8408,0
+strided,16,16-way,0.9375,8.846,4096,8408,0
+strided,full,fully-assoc,0.9375,8.846,4096,8408,0

@@ -1,0 +1,19 @@
+{
+  "label": "default-sequential",
+  "trace": {"pattern": "sequential", "accesses": 200000, "reads": 140062, "writes": 59938, "unique_blocks": 12500, "working_set_bytes": 1048576, "element_bytes": 4, "stride_bytes": 4096, "write_ratio": 0.300000, "seed": 42, "path": ""},
+  "levels": [
+    {"name": "L1", "size_bytes": 32768, "assoc": 8, "organisation": "8-way", "sets": 64, "block_bytes": 64, "replacement": "LRU", "write_policy": "write-back", "hit_latency": 4,
+     "accesses": 200000, "reads": 140062, "writes": 59938, "hits": 187500, "misses": 12500, "read_hits": 131332, "write_hits": 56168, "hit_rate": 0.937500, "miss_rate": 0.062500, "global_miss_rate": 0.062500,
+     "compulsory": 12500, "capacity": 0, "conflict": 0, "evictions": 11988, "writebacks": 11937, "write_throughs": 0, "writes_from_above": 0, "dirty_lines_at_end": 512},
+    {"name": "L2", "size_bytes": 262144, "assoc": 8, "organisation": "8-way", "sets": 512, "block_bytes": 64, "replacement": "LRU", "write_policy": "write-back", "hit_latency": 12,
+     "accesses": 12500, "reads": 12500, "writes": 0, "hits": 0, "misses": 12500, "read_hits": 0, "write_hits": 0, "hit_rate": 0.000000, "miss_rate": 1.000000, "global_miss_rate": 0.062500,
+     "compulsory": 12500, "capacity": 0, "conflict": 0, "evictions": 8404, "writebacks": 8370, "write_throughs": 0, "writes_from_above": 11937, "dirty_lines_at_end": 3567},
+    {"name": "L3", "size_bytes": 2097152, "assoc": 16, "organisation": "16-way", "sets": 2048, "block_bytes": 64, "replacement": "LRU", "write_policy": "write-back", "hit_latency": 40,
+     "accesses": 12500, "reads": 12500, "writes": 0, "hits": 0, "misses": 12500, "read_hits": 0, "write_hits": 0, "hit_rate": 0.000000, "miss_rate": 1.000000, "global_miss_rate": 0.062500,
+     "compulsory": 12500, "capacity": 0, "conflict": 0, "evictions": 0, "writebacks": 0, "write_throughs": 0, "writes_from_above": 8370, "dirty_lines_at_end": 8370}
+  ],
+  "memory": {"latency": 200, "reads": 12500, "writes": 0, "bytes_read": 800000, "bytes_written": 0},
+  "total_cycles": 3950000,
+  "amat": 19.750000,
+  "amat_formula": 19.750000
+}

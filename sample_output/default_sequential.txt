@@ -1,0 +1,19 @@
+=== Cache Hierarchy Simulation [default-sequential] ===
+Trace     : sequential, working set 1MB, element 4B
+Accesses  : 200000 (140062 reads, 59938 writes), 12500 unique blocks
+
+Level    Size   Organisation  Block    Repl          Write   Hit
+L1       32KB          8-way    64B     LRU     write-back     4
+L2      256KB          8-way    64B     LRU     write-back    12
+L3        2MB         16-way    64B     LRU     write-back    40
+MEM                                                          200
+
+Level   Accesses       Hits     Misses     Hit%   Global%   Compuls.  Capacity  Conflict     Evict    WrBack
+L1        200000     187500      12500    93.75      6.25      12500         0         0     11988     11937
+L2         12500          0      12500     0.00      6.25      12500         0         0      8404      8370
+L3         12500          0      12500     0.00      6.25      12500         0         0         0         0
+
+Main memory: 12500 reads (800000B), 0 writes (0B)
+Total cycles      : 3950000
+AMAT (measured)   : 19.750 cycles
+AMAT (formula)    : 19.750 cycles  = h1 + m1*(h2 + m2*(... + Tmem))

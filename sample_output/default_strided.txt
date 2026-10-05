@@ -1,0 +1,19 @@
+=== Cache Hierarchy Simulation [default-strided] ===
+Trace     : strided, working set 1MB, element 4B, stride 4096B
+Accesses  : 200000 (140062 reads, 59938 writes), 12544 unique blocks
+
+Level    Size   Organisation  Block    Repl          Write   Hit
+L1       32KB          8-way    64B     LRU     write-back     4
+L2      256KB          8-way    64B     LRU     write-back    12
+L3        2MB         16-way    64B     LRU     write-back    40
+MEM                                                          200
+
+Level   Accesses       Hits     Misses     Hit%   Global%   Compuls.  Capacity  Conflict     Evict    WrBack
+L1        200000          0     200000     0.00    100.00      12544         0    187456    199608     59835
+L2        200000          0     200000     0.00    100.00      12544         0    187456    196864     58944
+L3        200000     187456      12544    93.73      6.27      12544         0         0         0         0
+
+Main memory: 12544 reads (784KB), 0 writes (0B)
+Total cycles      : 13708800
+AMAT (measured)   : 68.544 cycles
+AMAT (formula)    : 68.544 cycles  = h1 + m1*(h2 + m2*(... + Tmem))

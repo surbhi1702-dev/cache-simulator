@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "cachesim (Linux/macOS, gdb/lldb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/cachesim",
+      "args": ["--config", "configs/default.cfg"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+      "MIMode": "gdb",
+      "osx": { "MIMode": "lldb" },
+      "externalConsole": false
+    },
+    {
+      "name": "cachesim (Windows, MSVC)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/cachesim.exe",
+      "args": ["--config", "configs/default.cfg"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "cachesim (Windows, MinGW gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/cachesim.exe",
+      "args": ["--config", "configs/default.cfg"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+      "MIMode": "gdb",
+      "externalConsole": false
+    },
+    {
+      "name": "unit tests (Linux/macOS)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/cachesim_tests",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+      "MIMode": "gdb",
+      "osx": { "MIMode": "lldb" }
+    },
+    {
+      "name": "Streamlit dashboard",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "dashboard/app.py"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+      "justMyCode": true
+    }
+  ]
+}

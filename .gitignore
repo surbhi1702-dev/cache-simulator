@@ -1,0 +1,8 @@
+build/
+!.vscode/
+build-*/
+__pycache__/
+*.pyc
+.streamlit/
+.venv/
+venv/

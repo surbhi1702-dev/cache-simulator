@@ -1,0 +1,4 @@
+label,pattern,accesses,level,size_bytes,assoc,organisation,block_bytes,replacement,write_policy,hit_latency,level_accesses,hits,misses,hit_rate,miss_rate,global_miss_rate,compulsory,capacity,conflict,evictions,writebacks,write_throughs,mem_reads,mem_writes,mem_bytes_read,mem_bytes_written,amat,amat_formula
+default-sequential,sequential,200000,L1,32768,8,8-way,64,LRU,write-back,4,200000,187500,12500,0.937500,0.062500,0.062500,12500,0,0,11988,11937,0,12500,0,800000,0,19.750000,19.750000
+default-sequential,sequential,200000,L2,262144,8,8-way,64,LRU,write-back,12,12500,0,12500,0.000000,1.000000,0.062500,12500,0,0,8404,8370,0,12500,0,800000,0,19.750000,19.750000
+default-sequential,sequential,200000,L3,2097152,16,16-way,64,LRU,write-back,40,12500,0,12500,0.000000,1.000000,0.062500,12500,0,0,0,0,0,12500,0,800000,0,19.750000,19.750000
